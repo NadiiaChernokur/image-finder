@@ -1,5 +1,5 @@
 import { Component } from "react";
-import axios from 'axios';
+
 import { Searchbar } from "./Searchbar/Searchbar";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { Button } from "./Button/Button";
@@ -45,7 +45,7 @@ export class App extends Component {
      status: STATUS.PENDING
       })
       
-     console.log(getImeges())   
+     
     //  const response = await axios.get(`${BASE_URL}?key=${API_Key}&q=${this.state.search.slice(14)}&page=${this.state.page}&${searchParams.toString()}`);
       const response = await getImeges();
     this.setState(prevState => {
