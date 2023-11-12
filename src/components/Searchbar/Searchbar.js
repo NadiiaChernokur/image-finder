@@ -6,10 +6,14 @@ import {
   SearchbarHeader,
 } from './Searchbar.styled';
 
-export const Searchbar = ({ onSubmit }) => {
+export const Searchbar = ({ onSubmit, onChange }) => {
   return (
     <SearchbarHeader className="searchbar">
-      <SearchForm className="form" onSubmit={e => onSubmit(e)}>
+      <SearchForm
+        className="form"
+        onSubmit={e => onSubmit(e)}
+        onChange={onChange}
+      >
         <SearchFormButton type="submit" className="button">
           <SearchFormButtonSpan className="button-label">
             Search
