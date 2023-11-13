@@ -7,7 +7,7 @@ export const ImageGallery = ({ images }) => {
       {images.map(image => {
         return (
           <ImageGalleryItem
-            id={image.webformatURL}
+            id={image.id}
             smallPhoto={image.webformatURL}
             largePhoto={image.largeImageURL}
           />
@@ -16,8 +16,3 @@ export const ImageGallery = ({ images }) => {
     </GalleryUl>
   );
 };
-// return (
-//   <GalleryUl>
-//     <ImageGalleryItem images={image} />
-//   </GalleryUl>
-// );
